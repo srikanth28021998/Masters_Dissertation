@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background-color: rgba(223, 242, 247, .5);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: url('https://static01.nyt.com/images/2021/04/24/multimedia/20sp-currents-planes-illo/20sp-currents-planes-illo-superJumbo.gif') no-repeat right top fixed;
+	background-size: cover;
+	animation: fadeIn 2s ease-in-out;
+}
+
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.container {
+	display: -webkit-inline-box;
+    justify-content: center;
+    align-items: center;
+    width: 79%;
+    height: 100%;
+}
+
+.chat {
+	height: 351px;
+    width: 42vw;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 60px;
+} 
+
+::-webkit-input-placeholder { 
+	color: .711 
+}
+ 
+input { 
+	border: 0; 
+	padding: 15px; 
+	margin-left: auto;
+	border-radius: 10px; 
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#bot {
+	margin-left: auto;
+}
+
+.bot {
+	font-family: cursive;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	color: aliceblue;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .container {
+		flex-direction: column; 
+		justify-content: flex-start;
+	}
+	.chat {
+		width: 75vw;
+		margin: 10vw;
+	}
+}
